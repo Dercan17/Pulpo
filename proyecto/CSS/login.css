@@ -1,0 +1,89 @@
+:root{
+    background: -webkit-linear-gradient(to right, hsla(104, 100%, 5%, 0.61),hsla(224, 58%, 48%, 0.603) );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(104, 100%, 5%, 0.61),hsla(224, 58%, 48%, 0.596));
+    --dark-x:#1e2126;
+    --light:#ffffff;
+
+}
+
+body{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
+
+
+nav{
+    text-align: right;
+    padding: 15px 30px 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.inicio{
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    float: right;
+    text-decoration: underline;
+}
+
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+
+.bg-dark{
+
+    background-color: var(--dark) !important;
+}
+
+.bg-dark-x{
+    background-color: var(--dark-x);
+}
+
+
+.form-control, .btn{
+
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
+.img-1{
+    background-image: url("../imagenes/img1.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.img-2{
+    background-image: url("../imagenes/img4.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.img-3{
+    background-image: url("../imagenes/img3.jfif");
+    background-size: cover;
+    background-position:center;
+}
+
+a{
+    text-decoration: underline;
+    color: #ffffff;
+    float: right;
+}

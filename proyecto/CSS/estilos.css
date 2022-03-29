@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.contenedor{
+
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: white;
+/*color: #345ac2;*/
+font-size: 30px;
+text-align: center;
+margin-bottom: 10%;
+}
+
+/*header*/
+
+
+header{
+width: 100%;
+height: 600px;
+background: #345ac2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(104, 100%, 5%, 0.61),hsla(224, 58%, 48%, 0.603) ),url(../IMAGENES/img3.jfif);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(104, 100%, 5%, 0.61),hsla(224, 58%, 48%, 0.596)),url(../IMAGENES/img3.jfif); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+
+
+nav{
+    text-align: right;
+    padding: 15px 30px 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: hsla(224, 58%, 48%, 0.404);  
+    background: -webkit-linear-gradient(to right, hsla(104, 100%, 5%, 0.61),hsla(224, 58%, 48%, 0.603) ); 
+    background: linear-gradient(to right, hsla(104, 100%, 5%, 0.61),hsla(224, 58%, 48%, 0.596));
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+nav > a{
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    
+    text-decoration: underline;
+   
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+
+}
+
+.textos-header{
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2{
+font-size: 30px;
+font-weight: 300;
+color: white;
+
+}
+
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/*about us*/
+.contenedor-sobre-nosotros{
+display: flex;
+justify-content: space-evenly;
+}
+
+
+.imagen-about-us{
+    width: 48%;
+    border-radius: 95%;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,5);
+
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #345ac2;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*galeria*/
+.portafolio{
+    background: hsla(224, 58%, 48%, 0.158) ;
+    
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 5);
+
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background:hsla(224, 58%, 48%, 0.5);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+color: white;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* footer */
+footer{
+    background: -webkit-linear-gradient(to right, hsla(104, 100%, 5%, 0.61),hsla(224, 58%, 48%, 0.603) );  
+    background: linear-gradient(to right, hsla(104, 100%, 5%, 0.61),hsla(224, 58%, 48%, 0.596)); padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #345ac2;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: white;
+    border-bottom: 3px solid #345ac2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+color: white;
+}
+
+
+
